@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBF808131C3D36B600F92FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808121C3D36B600F92FC5 /* AppDelegate.swift */; };
+		BBF808151C3D36B600F92FC5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808141C3D36B600F92FC5 /* FirstViewController.swift */; };
+		BBF808171C3D36B600F92FC5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808161C3D36B600F92FC5 /* SecondViewController.swift */; };
+		BBF8081A1C3D36B600F92FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF808181C3D36B600F92FC5 /* Main.storyboard */; };
+		BBF8081C1C3D36B600F92FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF8081B1C3D36B600F92FC5 /* Assets.xcassets */; };
+		BBF8081F1C3D36B600F92FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF8081D1C3D36B600F92FC5 /* LaunchScreen.storyboard */; };
+		BBF8082A1C3D36B600F92FC5 /* paifan_iphoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808291C3D36B600F92FC5 /* paifan_iphoneTests.swift */; };
+		BBF808351C3D36B600F92FC5 /* paifan_iphoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808341C3D36B600F92FC5 /* paifan_iphoneUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBF808261C3D36B600F92FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF808071C3D36B600F92FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF8080E1C3D36B600F92FC5;
+			remoteInfo = paifan_iphone;
+		};
+		BBF808311C3D36B600F92FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF808071C3D36B600F92FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF8080E1C3D36B600F92FC5;
+			remoteInfo = paifan_iphone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBF8080F1C3D36B600F92FC5 /* paifan_iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paifan_iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF808121C3D36B600F92FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBF808141C3D36B600F92FC5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BBF808161C3D36B600F92FC5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BBF808191C3D36B600F92FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBF8081B1C3D36B600F92FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBF8081E1C3D36B600F92FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBF808201C3D36B600F92FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF808251C3D36B600F92FC5 /* paifan_iphoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paifan_iphoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF808291C3D36B600F92FC5 /* paifan_iphoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paifan_iphoneTests.swift; sourceTree = "<group>"; };
+		BBF8082B1C3D36B600F92FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF808301C3D36B600F92FC5 /* paifan_iphoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paifan_iphoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF808341C3D36B600F92FC5 /* paifan_iphoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paifan_iphoneUITests.swift; sourceTree = "<group>"; };
+		BBF808361C3D36B600F92FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBF8080C1C3D36B600F92FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF808221C3D36B600F92FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF8082D1C3D36B600F92FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBF808061C3D36B600F92FC5 = {
+			isa = PBXGroup;
+			children = (
+				BBF808111C3D36B600F92FC5 /* paifan_iphone */,
+				BBF808281C3D36B600F92FC5 /* paifan_iphoneTests */,
+				BBF808331C3D36B600F92FC5 /* paifan_iphoneUITests */,
+				BBF808101C3D36B600F92FC5 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		BBF808101C3D36B600F92FC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBF8080F1C3D36B600F92FC5 /* paifan_iphone.app */,
+				BBF808251C3D36B600F92FC5 /* paifan_iphoneTests.xctest */,
+				BBF808301C3D36B600F92FC5 /* paifan_iphoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF808111C3D36B600F92FC5 /* paifan_iphone */ = {
+			isa = PBXGroup;
+			children = (
+				BBF808121C3D36B600F92FC5 /* AppDelegate.swift */,
+				BBF808141C3D36B600F92FC5 /* FirstViewController.swift */,
+				BBF808161C3D36B600F92FC5 /* SecondViewController.swift */,
+				BBF808181C3D36B600F92FC5 /* Main.storyboard */,
+				BBF8081B1C3D36B600F92FC5 /* Assets.xcassets */,
+				BBF8081D1C3D36B600F92FC5 /* LaunchScreen.storyboard */,
+				BBF808201C3D36B600F92FC5 /* Info.plist */,
+			);
+			path = paifan_iphone;
+			sourceTree = "<group>";
+		};
+		BBF808281C3D36B600F92FC5 /* paifan_iphoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBF808291C3D36B600F92FC5 /* paifan_iphoneTests.swift */,
+				BBF8082B1C3D36B600F92FC5 /* Info.plist */,
+			);
+			path = paifan_iphoneTests;
+			sourceTree = "<group>";
+		};
+		BBF808331C3D36B600F92FC5 /* paifan_iphoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBF808341C3D36B600F92FC5 /* paifan_iphoneUITests.swift */,
+				BBF808361C3D36B600F92FC5 /* Info.plist */,
+			);
+			path = paifan_iphoneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBF8080E1C3D36B600F92FC5 /* paifan_iphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF808391C3D36B600F92FC5 /* Build configuration list for PBXNativeTarget "paifan_iphone" */;
+			buildPhases = (
+				BBF8080B1C3D36B600F92FC5 /* Sources */,
+				BBF8080C1C3D36B600F92FC5 /* Frameworks */,
+				BBF8080D1C3D36B600F92FC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = paifan_iphone;
+			productName = paifan_iphone;
+			productReference = BBF8080F1C3D36B600F92FC5 /* paifan_iphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBF808241C3D36B600F92FC5 /* paifan_iphoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF8083C1C3D36B600F92FC5 /* Build configuration list for PBXNativeTarget "paifan_iphoneTests" */;
+			buildPhases = (
+				BBF808211C3D36B600F92FC5 /* Sources */,
+				BBF808221C3D36B600F92FC5 /* Frameworks */,
+				BBF808231C3D36B600F92FC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBF808271C3D36B600F92FC5 /* PBXTargetDependency */,
+			);
+			name = paifan_iphoneTests;
+			productName = paifan_iphoneTests;
+			productReference = BBF808251C3D36B600F92FC5 /* paifan_iphoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBF8082F1C3D36B600F92FC5 /* paifan_iphoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF8083F1C3D36B600F92FC5 /* Build configuration list for PBXNativeTarget "paifan_iphoneUITests" */;
+			buildPhases = (
+				BBF8082C1C3D36B600F92FC5 /* Sources */,
+				BBF8082D1C3D36B600F92FC5 /* Frameworks */,
+				BBF8082E1C3D36B600F92FC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBF808321C3D36B600F92FC5 /* PBXTargetDependency */,
+			);
+			name = paifan_iphoneUITests;
+			productName = paifan_iphoneUITests;
+			productReference = BBF808301C3D36B600F92FC5 /* paifan_iphoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBF808071C3D36B600F92FC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = gefan;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "杭州个范科技有限公司";
+				TargetAttributes = {
+					BBF8080E1C3D36B600F92FC5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X6SKM35H6X;
+					};
+					BBF808241C3D36B600F92FC5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BBF8080E1C3D36B600F92FC5;
+					};
+					BBF8082F1C3D36B600F92FC5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BBF8080E1C3D36B600F92FC5;
+					};
+				};
+			};
+			buildConfigurationList = BBF8080A1C3D36B600F92FC5 /* Build configuration list for PBXProject "paifan_iphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBF808061C3D36B600F92FC5;
+			productRefGroup = BBF808101C3D36B600F92FC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBF8080E1C3D36B600F92FC5 /* paifan_iphone */,
+				BBF808241C3D36B600F92FC5 /* paifan_iphoneTests */,
+				BBF8082F1C3D36B600F92FC5 /* paifan_iphoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBF8080D1C3D36B600F92FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF8081F1C3D36B600F92FC5 /* LaunchScreen.storyboard in Resources */,
+				BBF8081C1C3D36B600F92FC5 /* Assets.xcassets in Resources */,
+				BBF8081A1C3D36B600F92FC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF808231C3D36B600F92FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF8082E1C3D36B600F92FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBF8080B1C3D36B600F92FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF808171C3D36B600F92FC5 /* SecondViewController.swift in Sources */,
+				BBF808131C3D36B600F92FC5 /* AppDelegate.swift in Sources */,
+				BBF808151C3D36B600F92FC5 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF808211C3D36B600F92FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF8082A1C3D36B600F92FC5 /* paifan_iphoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF8082C1C3D36B600F92FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF808351C3D36B600F92FC5 /* paifan_iphoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBF808271C3D36B600F92FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBF8080E1C3D36B600F92FC5 /* paifan_iphone */;
+			targetProxy = BBF808261C3D36B600F92FC5 /* PBXContainerItemProxy */;
+		};
+		BBF808321C3D36B600F92FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBF8080E1C3D36B600F92FC5 /* paifan_iphone */;
+			targetProxy = BBF808311C3D36B600F92FC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBF808181C3D36B600F92FC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF808191C3D36B600F92FC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBF8081D1C3D36B600F92FC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF8081E1C3D36B600F92FC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBF808371C3D36B600F92FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBF808381C3D36B600F92FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBF8083A1C3D36B600F92FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = paifan_iphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BBF8083B1C3D36B600F92FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = paifan_iphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		BBF8083D1C3D36B600F92FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = paifan_iphoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphoneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paifan_iphone.app/paifan_iphone";
+			};
+			name = Debug;
+		};
+		BBF8083E1C3D36B600F92FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = paifan_iphoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphoneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paifan_iphone.app/paifan_iphone";
+			};
+			name = Release;
+		};
+		BBF808401C3D36B600F92FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = paifan_iphoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphoneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = paifan_iphone;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BBF808411C3D36B600F92FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = paifan_iphoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphoneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = paifan_iphone;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBF8080A1C3D36B600F92FC5 /* Build configuration list for PBXProject "paifan_iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF808371C3D36B600F92FC5 /* Debug */,
+				BBF808381C3D36B600F92FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF808391C3D36B600F92FC5 /* Build configuration list for PBXNativeTarget "paifan_iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF8083A1C3D36B600F92FC5 /* Debug */,
+				BBF8083B1C3D36B600F92FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBF8083C1C3D36B600F92FC5 /* Build configuration list for PBXNativeTarget "paifan_iphoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF8083D1C3D36B600F92FC5 /* Debug */,
+				BBF8083E1C3D36B600F92FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBF8083F1C3D36B600F92FC5 /* Build configuration list for PBXNativeTarget "paifan_iphoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF808401C3D36B600F92FC5 /* Debug */,
+				BBF808411C3D36B600F92FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBF808071C3D36B600F92FC5 /* Project object */;
+}
