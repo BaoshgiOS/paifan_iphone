@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB84C23B1C95118F0058AECE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84C22F1C95118F0058AECE /* AFHTTPSessionManager.m */; };
+		BB84C23C1C95118F0058AECE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84C2321C95118F0058AECE /* AFNetworkReachabilityManager.m */; };
+		BB84C23D1C95118F0058AECE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84C2341C95118F0058AECE /* AFSecurityPolicy.m */; };
+		BB84C23E1C95118F0058AECE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84C2361C95118F0058AECE /* AFURLRequestSerialization.m */; };
+		BB84C23F1C95118F0058AECE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84C2381C95118F0058AECE /* AFURLResponseSerialization.m */; };
+		BB84C2401C95118F0058AECE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84C23A1C95118F0058AECE /* AFURLSessionManager.m */; };
 		BBE481CA1C41EADC00B7DD4E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE481C91C41EADC00B7DD4E /* Article.swift */; };
-		BBE481CC1C41EFDA00B7DD4E /* ArticleCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE481CB1C41EFDA00B7DD4E /* ArticleCardTableViewCell.swift */; };
 		BBF808131C3D36B600F92FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808121C3D36B600F92FC5 /* AppDelegate.swift */; };
 		BBF808151C3D36B600F92FC5 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808141C3D36B600F92FC5 /* FindViewController.swift */; };
 		BBF808171C3D36B600F92FC5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF808161C3D36B600F92FC5 /* SecondViewController.swift */; };
@@ -37,8 +42,21 @@
 
 /* Begin PBXFileReference section */
 		BB4EB7BD1C40BBE900EA8271 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BB84C22D1C95118F0058AECE /* paifan_iphone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "paifan_iphone-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		BB84C22E1C95118F0058AECE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = ../AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BB84C22F1C95118F0058AECE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = ../AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BB84C2301C95118F0058AECE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = ../AFNetworking.h; sourceTree = "<group>"; };
+		BB84C2311C95118F0058AECE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = ../AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BB84C2321C95118F0058AECE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = ../AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BB84C2331C95118F0058AECE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = ../AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BB84C2341C95118F0058AECE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = ../AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BB84C2351C95118F0058AECE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = ../AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BB84C2361C95118F0058AECE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = ../AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BB84C2371C95118F0058AECE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = ../AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BB84C2381C95118F0058AECE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = ../AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BB84C2391C95118F0058AECE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = ../AFURLSessionManager.h; sourceTree = "<group>"; };
+		BB84C23A1C95118F0058AECE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = ../AFURLSessionManager.m; sourceTree = "<group>"; };
 		BBE481C91C41EADC00B7DD4E /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		BBE481CB1C41EFDA00B7DD4E /* ArticleCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCardTableViewCell.swift; sourceTree = "<group>"; };
 		BBF8080F1C3D36B600F92FC5 /* paifan_iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paifan_iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF808121C3D36B600F92FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF808141C3D36B600F92FC5 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +97,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB84C2411C9511A80058AECE /* afn */ = {
+			isa = PBXGroup;
+			children = (
+				BB84C22D1C95118F0058AECE /* paifan_iphone-Bridging-Header.h */,
+				BB84C22E1C95118F0058AECE /* AFHTTPSessionManager.h */,
+				BB84C22F1C95118F0058AECE /* AFHTTPSessionManager.m */,
+				BB84C2301C95118F0058AECE /* AFNetworking.h */,
+				BB84C2311C95118F0058AECE /* AFNetworkReachabilityManager.h */,
+				BB84C2321C95118F0058AECE /* AFNetworkReachabilityManager.m */,
+				BB84C2331C95118F0058AECE /* AFSecurityPolicy.h */,
+				BB84C2341C95118F0058AECE /* AFSecurityPolicy.m */,
+				BB84C2351C95118F0058AECE /* AFURLRequestSerialization.h */,
+				BB84C2361C95118F0058AECE /* AFURLRequestSerialization.m */,
+				BB84C2371C95118F0058AECE /* AFURLResponseSerialization.h */,
+				BB84C2381C95118F0058AECE /* AFURLResponseSerialization.m */,
+				BB84C2391C95118F0058AECE /* AFURLSessionManager.h */,
+				BB84C23A1C95118F0058AECE /* AFURLSessionManager.m */,
+			);
+			name = afn;
+			sourceTree = "<group>";
+		};
+		BBAC23EF1C4B83BF00250BF4 /* uimodels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = uimodels;
+			sourceTree = "<group>";
+		};
 		BBE481C81C41EAC500B7DD4E /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,12 +157,13 @@
 		BBF808111C3D36B600F92FC5 /* paifan_iphone */ = {
 			isa = PBXGroup;
 			children = (
+				BB84C2411C9511A80058AECE /* afn */,
+				BBAC23EF1C4B83BF00250BF4 /* uimodels */,
 				BBE481C81C41EAC500B7DD4E /* models */,
 				BBF808121C3D36B600F92FC5 /* AppDelegate.swift */,
 				BBF808141C3D36B600F92FC5 /* FindViewController.swift */,
 				BBF808161C3D36B600F92FC5 /* SecondViewController.swift */,
 				BBF808181C3D36B600F92FC5 /* Main.storyboard */,
-				BBE481CB1C41EFDA00B7DD4E /* ArticleCardTableViewCell.swift */,
 				BBF8081B1C3D36B600F92FC5 /* Assets.xcassets */,
 				BBF808201C3D36B600F92FC5 /* Info.plist */,
 			);
@@ -272,11 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB84C23D1C95118F0058AECE /* AFSecurityPolicy.m in Sources */,
+				BB84C23F1C95118F0058AECE /* AFURLResponseSerialization.m in Sources */,
 				BBE481CA1C41EADC00B7DD4E /* Article.swift in Sources */,
 				BBF808171C3D36B600F92FC5 /* SecondViewController.swift in Sources */,
+				BB84C23B1C95118F0058AECE /* AFHTTPSessionManager.m in Sources */,
+				BB84C2401C95118F0058AECE /* AFURLSessionManager.m in Sources */,
 				BBF808131C3D36B600F92FC5 /* AppDelegate.swift in Sources */,
-				BBE481CC1C41EFDA00B7DD4E /* ArticleCardTableViewCell.swift in Sources */,
+				BB84C23C1C95118F0058AECE /* AFNetworkReachabilityManager.m in Sources */,
 				BBF808151C3D36B600F92FC5 /* FindViewController.swift in Sources */,
+				BB84C23E1C95118F0058AECE /* AFURLRequestSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,14 +463,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = paifan_iphone/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "paifan_iphone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -427,14 +482,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = paifan_iphone/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gefan.paifan-iphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "paifan_iphone-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
