@@ -113,7 +113,7 @@
 		BB84C2431C95125E0058AECE /* ArticleServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleServiceInterface.swift; sourceTree = "<group>"; };
 		BB84C25A1C9833880058AECE /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		BB934A881C983623002BE8D5 /* PaifanHttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaifanHttpHelper.swift; sourceTree = "<group>"; };
-		BB934A8A1C983CB9002BE8D5 /* paifan_iphone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "paifan_iphone-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB934A8A1C983CB9002BE8D5 /* paifan_iphone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "paifan_iphone-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		BBE481C91C41EADC00B7DD4E /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		BBF8080F1C3D36B600F92FC5 /* paifan_iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paifan_iphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF808121C3D36B600F92FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,7 +202,6 @@
 				BBF808331C3D36B600F92FC5 /* paifan_iphoneUITests */,
 				BBF808101C3D36B600F92FC5 /* Products */,
 				BB84C25A1C9833880058AECE /* Alamofire.xcodeproj */,
-				BB934A8A1C983CB9002BE8D5 /* paifan_iphone-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -220,6 +219,7 @@
 		BBF808111C3D36B600F92FC5 /* paifan_iphone */ = {
 			isa = PBXGroup;
 			children = (
+				BB934A8A1C983CB9002BE8D5 /* paifan_iphone-Bridging-Header.h */,
 				BB84C2421C9512280058AECE /* interfaces */,
 				BBAC23EF1C4B83BF00250BF4 /* uimodels */,
 				BBE481C81C41EAC500B7DD4E /* models */,
