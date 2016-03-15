@@ -23,6 +23,8 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		tableView.delegate = self
 		tableView.dataSource = self
 		
+		ArticleServiceInterface().sendHomeInformationRequest(nil, genderId: nil, classifyId: nil, page: 1)
+		
 		}
 
     override func didReceiveMemoryWarning() {
