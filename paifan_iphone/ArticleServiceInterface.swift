@@ -12,8 +12,8 @@ import Alamofire
 class ArticleServiceInterface {
 	
 	func sendHomeInformationRequest(userId: Int?, genderId: Int?, classifyId: String?,
-		page: Int) -> String {
-			
+		page: Int, completeCallback:(articles: [Article]) -> Void) -> Void {
+			//, completeCallback:() -> Void, errorCallback:(error: String) -> Void
 			var parameters:[String:String] = ["pageSize":"6", "pageNumber":String(page)]
 			
 			if (genderId != nil) {
@@ -31,11 +31,25 @@ class ArticleServiceInterface {
 			let url = getFormattedUrl(getRestServiceAddress() + "/terminal/app/index.html", parameters: parameters)
 			
 			Alamofire.request(.GET, url)
-				.responseString { response in
-					print(response.result.value)
+				.responseJSON { response in switch response.result {
+				case .Success(let JSON):
+					let defaultResponse = parseDefaultResponse(JSON as! NSDictionary)
+					
+					if (defaultResponse.succeed()) {
+						let articles = ArticleTranslator().parseHomeInformation(defaultResponse.data)
+						
+						completeCallback(articles: articles)
+					}
+					
+					print(defaultResponse.message)
+				case .Failure(let error):
+					print(error)
+				}
 			}
+					
 		
-			return "OK"
+		
+			
 	}
 	
 }

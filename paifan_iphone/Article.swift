@@ -9,20 +9,19 @@
 import UIKit
 
 class Article {
-	var articleId: Int
-	var serverReference: String
-	var creationTime: NSDate = NSDate()
+	var articleId: Int = 0
+	var serverReference: String = ""
+	var creationTime: String = ""
 	var likeCount: Int = 0
-	var title: String
-	var photo: UIImage? = nil
+	var title: String = ""
+	var photo: String = ""
 	var description: String = ""
-	var tags: String = ""
+	var tags: [String] = []
 	var userId: Int = 0
 	var liked: Bool = false
+	var user: User = User()
 	
-	init(articleId: Int, serverReference: String, title: String) {
-		self.articleId = articleId;
-		self.serverReference = serverReference;
-		self.title = title;
+	init () {
+		
 	}
 }

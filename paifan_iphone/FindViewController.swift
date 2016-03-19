@@ -12,20 +12,39 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
     @IBOutlet weak var tableView: UITableView!
 	
-	let articles = ["撸管绪论", "桢哥谈撸管", "桢哥在美帝的撸管生涯", "结束撸管"]
+	var articles:[Article] = []
 	let articleCellIdentifier = "ArticleFolderCell"
 	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        self.title = "硅谷撸管谈"
+		
+		//let menu_button_ = UIBarButtonItem(image: UIImage(named: "genderType"), style: UIBarButtonItemStyle.Plain, target: self, action: "OnGenderMenuClicked:")
+		
+		let menu_button_ = UIButton()
+		menu_button_.frame = CGRectMake(0, 0, 51, 31)
+		menu_button_.setImage(UIImage(named: "genderType"), forState: .Normal)
+		menu_button_.addTarget(self, action: "genderButtonPressed:", forControlEvents: .TouchUpInside)
+		
+		let menu_button = UIBarButtonItem()
+		menu_button.customView = menu_button_
+		
+		self.navigationItem.rightBarButtonItem = menu_button
+		
+        self.title = "拍范"
 		tableView.delegate = self
 		tableView.dataSource = self
 		
-		ArticleServiceInterface().sendHomeInformationRequest(nil, genderId: nil, classifyId: nil, page: 1)
+		ArticleServiceInterface().sendHomeInformationRequest(nil, genderId: nil, classifyId: nil, page: 1, completeCallback: { articles in
+			    self.articles = articles
+				self.tableView.reloadData()
+			})
 		
 		}
+	
+	func genderButtonPressed(sender: UIButton) {
+		
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,11 +60,15 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier(articleCellIdentifier, forIndexPath: indexPath)
+		let cell = tableView.dequeueReusableCellWithIdentifier(articleCellIdentifier, forIndexPath: indexPath) as! ArticleTableCell
 		
 		let row = indexPath.row
-		cell.textLabel?.text = articles[row]
-		
+		cell.authorNameLabel.text = articles[row].user.nickName
+		cell.authorRoleLabel.text = articles[row].user.role
+		cell.titleLabel?.text = articles[row].title
+		cell.folderImageView.sd_setImageWithURL(NSURL(string: articles[row].photo),
+			placeholderImage: UIImage(named: "genderType"))
+		cell.authorImageView.sd_setImageWithURL(NSURL(string: articles[row].user.avatar), placeholderImage: UIImage(named: "genderType"))
 		return cell
 	}
 	
@@ -54,6 +77,10 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		
 		let row = indexPath.row
 		print(articles[row])
+	}
+	
+	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		return 500
 	}
 	
 }
