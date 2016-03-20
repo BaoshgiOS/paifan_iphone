@@ -14,52 +14,71 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-0x-mxH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-0x-mxH">
+                                <rect key="frame" x="1" y="1" width="373" height="616"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleFolderCell" rowHeight="500" id="mQ0-C7-TOF" customClass="ArticleTableCell" customModule="paifan_iphone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="500"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleFolderCell" rowHeight="600" id="mQ0-C7-TOF" customClass="ArticleTableCell" customModule="paifan_iphone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="373" height="600"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mQ0-C7-TOF" id="2Kc-fa-NTg">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="499.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="599.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuw-hP-MM1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wuw-hP-MM1">
                                                     <rect key="frame" x="8" y="8" width="65" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="8BZ-s2-M7m"/>
+                                                        <constraint firstAttribute="width" constant="65" id="ztD-YW-X1q"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ty5-5c-U2t">
-                                                    <rect key="frame" x="81" y="22" width="274" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="ty5-5c-U2t">
+                                                    <rect key="frame" x="81" y="23" width="44.5" height="20.5"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7j-14-bdV">
-                                                    <rect key="frame" x="81" y="51" width="69" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="o7j-14-bdV">
+                                                    <rect key="frame" x="81" y="52" width="42" height="20"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-eP-bUD">
-                                                    <rect key="frame" x="8" y="86" width="584" height="128"/>
-                                                    <accessibility key="accessibilityConfiguration" identifier="folderImage"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpn-fL-N0e">
-                                                    <rect key="frame" x="8" y="415" width="470" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="Mpn-fL-N0e">
+                                                    <rect key="frame" x="8" y="422" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-eP-bUD">
+                                                    <rect key="frame" x="0.0" y="87" width="373" height="300"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="folderImage"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="CgZ-oV-AFA"/>
+                                                    </constraints>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="87" width="398" height="300"/>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="OrC-eP-bUD" firstAttribute="leading" secondItem="2Kc-fa-NTg" secondAttribute="leading" id="JK3-d0-KYT"/>
-                                                <constraint firstAttribute="trailing" secondItem="OrC-eP-bUD" secondAttribute="trailing" id="rPw-AA-feb"/>
+                                                <constraint firstItem="wuw-hP-MM1" firstAttribute="leading" secondItem="2Kc-fa-NTg" secondAttribute="leading" constant="8" id="3EB-73-APD"/>
+                                                <constraint firstItem="OrC-eP-bUD" firstAttribute="top" secondItem="wuw-hP-MM1" secondAttribute="bottom" constant="15" id="43V-Vg-rtQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="OrC-eP-bUD" secondAttribute="trailing" id="Ccy-Az-ow1"/>
+                                                <constraint firstItem="Mpn-fL-N0e" firstAttribute="leading" secondItem="2Kc-fa-NTg" secondAttribute="leading" constant="8" id="CvM-sd-JSH"/>
+                                                <constraint firstItem="o7j-14-bdV" firstAttribute="bottom" secondItem="wuw-hP-MM1" secondAttribute="bottom" id="ECW-p8-nVh"/>
+                                                <constraint firstItem="Mpn-fL-N0e" firstAttribute="top" secondItem="OrC-eP-bUD" secondAttribute="bottom" constant="35" id="IYZ-8T-Hq6"/>
+                                                <constraint firstItem="wuw-hP-MM1" firstAttribute="top" secondItem="2Kc-fa-NTg" secondAttribute="top" constant="8" id="MdU-xE-aPE"/>
+                                                <constraint firstItem="OrC-eP-bUD" firstAttribute="leading" secondItem="2Kc-fa-NTg" secondAttribute="leading" id="RJQ-ah-rBA"/>
+                                                <constraint firstItem="o7j-14-bdV" firstAttribute="leading" secondItem="ty5-5c-U2t" secondAttribute="leading" id="q2f-5C-oyw"/>
+                                                <constraint firstItem="o7j-14-bdV" firstAttribute="top" secondItem="ty5-5c-U2t" secondAttribute="bottom" constant="8" id="sBt-LE-sIp"/>
+                                                <constraint firstItem="o7j-14-bdV" firstAttribute="leading" secondItem="wuw-hP-MM1" secondAttribute="trailing" constant="8" id="ubp-9L-Ym0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -82,6 +101,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="拍范" id="K5B-ts-035"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="ifX-0x-mxH" id="pkP-tc-I9t"/>
                     </connections>

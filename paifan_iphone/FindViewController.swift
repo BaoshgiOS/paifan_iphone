@@ -80,7 +80,7 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return 500
+		return 800
 	}
 	
 }
