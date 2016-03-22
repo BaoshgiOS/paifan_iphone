@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import ImagePlayerView
 
-
-class FindViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FindViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,ImagePlayerViewDelegate {
 	
     @IBOutlet weak var tableView: UITableView!
 	
 	var articles:[Article] = []
+	var bannerImages = []
+	var articleTags = ["搭配","韩系","逛街"]
+	
 	let articleCellIdentifier = "ArticleFolderTableViewCell"
+	let bannerCellIdentifier = "BannerTableViewCell"
+	let articleHeaderCellIdentifier = "ArticleHeaderTableViewCell"
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +39,9 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		
         self.title = "拍范"
 		
+		tableView.registerNib(UINib(nibName: bannerCellIdentifier, bundle: nil), forCellReuseIdentifier: bannerCellIdentifier)
 		tableView.registerNib(UINib(nibName: articleCellIdentifier, bundle: nil), forCellReuseIdentifier: articleCellIdentifier)
+		tableView.registerNib(UINib(nibName: articleHeaderCellIdentifier, bundle: nil), forCellReuseIdentifier: articleHeaderCellIdentifier)
 		
 		tableView.tableFooterView = UIView()
 		
@@ -60,7 +67,7 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-		return articles.count
+		return articles.count + 2
 	}
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,20 +75,40 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-		return 5
+		return ((section < 3) ? 0 : 5)
 	}
-	
-	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier(articleCellIdentifier, forIndexPath: indexPath) as! ArticleFolderTableViewCell
 		
-		let row = indexPath.section
-		cell.authorNameLabel.text = articles[row].user.nickName
-		cell.authorRoleLabel.text = articles[row].user.role
-		cell.titleLabel?.text = articles[row].title
-		cell.folderImageView.sd_setImageWithURL(NSURL(string: articles[row].photo),
-			placeholderImage: UIImage(named: "genderType"))
-		cell.authorImageView.sd_setImageWithURL(NSURL(string: articles[row].user.avatar), placeholderImage: UIImage(named: "genderType"))
-		return cell
+	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+		
+		if indexPath.section == 0 {
+			let cell = tableView.dequeueReusableCellWithIdentifier(bannerCellIdentifier, forIndexPath: indexPath) as! BannerTableViewCell
+			cell.bannerView.imagePlayerViewDelegate = self
+			cell.bannerView.pageControlPosition = ICPageControlPosition.BottomCenter
+			return cell
+		}
+		else if indexPath.section == 1{
+			let cell = tableView.dequeueReusableCellWithIdentifier(articleHeaderCellIdentifier, forIndexPath: indexPath) as! ArticleHeaderTableViewCell
+			return cell
+		}
+		else{
+			let cell = tableView.dequeueReusableCellWithIdentifier(articleCellIdentifier, forIndexPath: indexPath) as! ArticleFolderTableViewCell
+			
+			let row = indexPath.section - 2
+			cell.authorNameLabel.text = articles[row].user.nickName
+			cell.authorRoleLabel.text = articles[row].user.role
+			cell.titleLabel?.text = articles[row].title
+			cell.folderImageView.sd_setImageWithURL(NSURL(string: articles[row].photo),
+			                                        placeholderImage: UIImage(named: "genderType"))
+			cell.authorImageView.sd_setImageWithURL(NSURL(string: articles[row].user.avatar), placeholderImage: UIImage(named: "genderType"))
+			cell.authorImageView.sd_setImageWithURL(NSURL(string: articles[row].user.avatar), placeholderImage: UIImage(named: "genderType"), options: SDWebImageOptions.AvoidAutoSetImage, completed: { (image : UIImage!, error : NSError!, cacheType : SDImageCacheType, url :NSURL!) in
+				cell.authorImageView.image = image.getRoundImage()
+			})
+			
+			cell.authorTags.tags = NSMutableArray.init(array: articleTags)
+			cell.authorTags.reloadTagSubviews()
+			
+			return cell
+		}
 	}
 	
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -92,7 +119,23 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return 537
+		if indexPath.section == 1 {
+			return 35
+		}
+		return (indexPath.section == 0 ? 120 : 537)
+	}
+	
+	func numberOfItems() -> Int {
+		return bannerImages.count
+	}
+	
+	func imagePlayerView(imagePlayerView: ImagePlayerView!, loadImageForImageView imageView: UIImageView!, index: Int)
+	{
+		
+	}
+	
+	func imagePlayerView(imagePlayerView: ImagePlayerView!, didTapAtIndex index: Int, imageURL: NSURL!) {
+		
 	}
 	
 }

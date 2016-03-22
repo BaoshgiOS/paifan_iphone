@@ -15,10 +15,19 @@ class ArticleFolderTableViewCell: UITableViewCell {
 	@IBOutlet weak var authorRoleLabel: UILabel!
 	@IBOutlet weak var folderImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
-
+    @IBOutlet weak var authorTags: TLTagsControl!
+	
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+		
+		authorRoleLabel.layer.masksToBounds = true
+		authorRoleLabel.layer.cornerRadius = 4
+		
+		authorTags.tagsBackgroundColor = UIColor.whiteColor();
+		authorTags.tagsTextColor = UIColor.orangeColor();
+		authorTags.mode =  TLTagsControlMode.List
+		
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

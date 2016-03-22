@@ -10,6 +10,12 @@
 		4C5786F01CA04754005B2A1B /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5786E51CA04655005B2A1B /* libSDWebImage.a */; };
 		4C5786F71CA048FF005B2A1B /* ArticleFolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5786F51CA048FF005B2A1B /* ArticleFolderTableViewCell.swift */; };
 		4C5786F81CA048FF005B2A1B /* ArticleFolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5786F61CA048FF005B2A1B /* ArticleFolderTableViewCell.xib */; };
+		4CC19D2D1CA1952900AAAD9F /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19D2B1CA1952900AAAD9F /* BannerTableViewCell.swift */; };
+		4CC19D2E1CA1952900AAAD9F /* BannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC19D2C1CA1952900AAAD9F /* BannerTableViewCell.xib */; };
+		4CC19D401CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19D3E1CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.swift */; };
+		4CC19D411CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC19D3F1CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.xib */; };
+		4CC19D491CA1B43000AAAD9F /* UIImage+WM.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19D481CA1B43000AAAD9F /* UIImage+WM.m */; };
+		4CC19D4E1CA1BB0F00AAAD9F /* TLTagsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19D4D1CA1BB0F00AAAD9F /* TLTagsControl.m */; };
 		5FFA54771936296037D4564A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882EC33C525E35B371AF5427 /* Pods.framework */; };
 		BB5597691C99875600801413 /* ArticleTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5597681C99875600801413 /* ArticleTranslator.swift */; };
 		BB55976B1C998A1F00801413 /* ClassifyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55976A1C998A1F00801413 /* ClassifyType.swift */; };
@@ -108,6 +114,14 @@
 		4C5786DB1CA04655005B2A1B /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../Downloads/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
 		4C5786F51CA048FF005B2A1B /* ArticleFolderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleFolderTableViewCell.swift; sourceTree = "<group>"; };
 		4C5786F61CA048FF005B2A1B /* ArticleFolderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleFolderTableViewCell.xib; sourceTree = "<group>"; };
+		4CC19D2B1CA1952900AAAD9F /* BannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
+		4CC19D2C1CA1952900AAAD9F /* BannerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerTableViewCell.xib; sourceTree = "<group>"; };
+		4CC19D3E1CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		4CC19D3F1CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		4CC19D471CA1B43000AAAD9F /* UIImage+WM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WM.h"; sourceTree = "<group>"; };
+		4CC19D481CA1B43000AAAD9F /* UIImage+WM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WM.m"; sourceTree = "<group>"; };
+		4CC19D4C1CA1BB0F00AAAD9F /* TLTagsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTagsControl.h; sourceTree = "<group>"; };
+		4CC19D4D1CA1BB0F00AAAD9F /* TLTagsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTagsControl.m; sourceTree = "<group>"; };
 		882EC33C525E35B371AF5427 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882F5544EB58FE1548FCDB1A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9B6DE668D89B862E826ECA6F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +194,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4CC19D461CA1B3BF00AAAD9F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CC19D471CA1B43000AAAD9F /* UIImage+WM.h */,
+				4CC19D481CA1B43000AAAD9F /* UIImage+WM.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4CC19D4A1CA1BAC300AAAD9F /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				4CC19D4B1CA1BB0F00AAAD9F /* TLTagsContol */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		4CC19D4B1CA1BB0F00AAAD9F /* TLTagsContol */ = {
+			isa = PBXGroup;
+			children = (
+				4CC19D4C1CA1BB0F00AAAD9F /* TLTagsControl.h */,
+				4CC19D4D1CA1BB0F00AAAD9F /* TLTagsControl.m */,
+			);
+			path = TLTagsContol;
+			sourceTree = "<group>";
+		};
 		BB5597611C99873200801413 /* translators */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +245,10 @@
 			children = (
 				4C5786F51CA048FF005B2A1B /* ArticleFolderTableViewCell.swift */,
 				4C5786F61CA048FF005B2A1B /* ArticleFolderTableViewCell.xib */,
+				4CC19D2B1CA1952900AAAD9F /* BannerTableViewCell.swift */,
+				4CC19D2C1CA1952900AAAD9F /* BannerTableViewCell.xib */,
+				4CC19D3E1CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.swift */,
+				4CC19D3F1CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.xib */,
 			);
 			name = uimodels;
 			sourceTree = "<group>";
@@ -254,6 +298,8 @@
 				BB84C2421C9512280058AECE /* interfaces */,
 				BBAC23EF1C4B83BF00250BF4 /* uimodels */,
 				BBE481C81C41EAC500B7DD4E /* models */,
+				4CC19D4A1CA1BAC300AAAD9F /* Vendors */,
+				4CC19D461CA1B3BF00AAAD9F /* Extensions */,
 				BBF808121C3D36B600F92FC5 /* AppDelegate.swift */,
 				BBF808141C3D36B600F92FC5 /* FindViewController.swift */,
 				BBF808161C3D36B600F92FC5 /* SecondViewController.swift */,
@@ -454,7 +500,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5786F81CA048FF005B2A1B /* ArticleFolderTableViewCell.xib in Resources */,
+				4CC19D2E1CA1952900AAAD9F /* BannerTableViewCell.xib in Resources */,
 				BBF8081C1C3D36B600F92FC5 /* Assets.xcassets in Resources */,
+				4CC19D411CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.xib in Resources */,
 				BBF8081A1C3D36B600F92FC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +576,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC19D4E1CA1BB0F00AAAD9F /* TLTagsControl.m in Sources */,
+				4CC19D401CA1ADC600AAAD9F /* ArticleHeaderTableViewCell.swift in Sources */,
 				BB934A891C983623002BE8D5 /* PaifanHttpHelper.swift in Sources */,
 				BB5597691C99875600801413 /* ArticleTranslator.swift in Sources */,
 				BBE481CA1C41EADC00B7DD4E /* Article.swift in Sources */,
@@ -541,8 +591,10 @@
 				BB55976B1C998A1F00801413 /* ClassifyType.swift in Sources */,
 				4C5786F71CA048FF005B2A1B /* ArticleFolderTableViewCell.swift in Sources */,
 				BBF808131C3D36B600F92FC5 /* AppDelegate.swift in Sources */,
+				4CC19D2D1CA1952900AAAD9F /* BannerTableViewCell.swift in Sources */,
 				BBF808151C3D36B600F92FC5 /* FindViewController.swift in Sources */,
 				BBDBF30D1C9C42D10020DEBA /* ClassifyItem.swift in Sources */,
+				4CC19D491CA1B43000AAAD9F /* UIImage+WM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
