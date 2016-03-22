@@ -8,12 +8,13 @@
 
 import UIKit
 
+
 class FindViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
     @IBOutlet weak var tableView: UITableView!
 	
 	var articles:[Article] = []
-	let articleCellIdentifier = "ArticleFolderCell"
+	let articleCellIdentifier = "ArticleFolderTableViewCell"
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +33,15 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		self.navigationItem.rightBarButtonItem = menu_button
 		
         self.title = "拍范"
+		
+		tableView.registerNib(UINib(nibName: articleCellIdentifier, bundle: nil), forCellReuseIdentifier: articleCellIdentifier)
+		
+		tableView.tableFooterView = UIView()
+		
 		tableView.delegate = self
 		tableView.dataSource = self
+		
+		
 		
 		ArticleServiceInterface().sendHomeInformationRequest(nil, genderId: nil, classifyId: nil, page: 1, completeCallback: { articles in
 			    self.articles = articles
@@ -52,17 +60,21 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-		return 1
-	}
-	
-	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return articles.count
 	}
 	
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 1
+	}
+	
+	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return 5
+	}
+	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier(articleCellIdentifier, forIndexPath: indexPath) as! ArticleTableCell
+		let cell = tableView.dequeueReusableCellWithIdentifier(articleCellIdentifier, forIndexPath: indexPath) as! ArticleFolderTableViewCell
 		
-		let row = indexPath.row
+		let row = indexPath.section
 		cell.authorNameLabel.text = articles[row].user.nickName
 		cell.authorRoleLabel.text = articles[row].user.role
 		cell.titleLabel?.text = articles[row].title
@@ -80,7 +92,7 @@ class FindViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return 800
+		return 537
 	}
 	
 }
